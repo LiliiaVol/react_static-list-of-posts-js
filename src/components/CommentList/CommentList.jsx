@@ -2,7 +2,7 @@ import { CommentInfo } from '../CommentInfo/CommentInfo';
 import './CommentList.scss';
 
 export const CommentList = ({ comments }) => {
-  return comments.length !== 0 ? (
+  return comments.length ? (
     <div className="CommentList">
       {comments.map(comment => (
         <CommentInfo comment={comment} key={comment.id} />
